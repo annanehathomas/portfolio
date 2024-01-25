@@ -1,0 +1,120 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond:wght@500&family=Grape+Nuts&family=Kanit:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Kanit:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Grape+Nuts&family=Kanit:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Dancing+Script&family=EB+Garamond:wght@500&family=Grape+Nuts&family=Kanit:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Dancing+Script&family=EB+Garamond:wght@500&family=Grape+Nuts&family=Kanit:wght@300&family=Noto+Serif&display=swap');
+header{
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+}
+body{
+    background: rgb(0,39,54);
+    background: radial-gradient(circle, rgba(0,39,54,1) 0%, rgba(0,0,0,1) 72%);
+
+}
+.nav-item a{
+        margin: 10px;
+        color: #fdaa03;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        
+    }
+
+.image{
+   margin-top: 85px;
+    margin-left:56px;
+}
+.col-md-6 p {
+    font-family: 'Dancing Script', cursive;
+}
+.col-md-6 h1{
+    font-family: 'EB Garamond', serif;
+}
+.col-md-6 h5{
+    font-family: 'Cairo', sans-serif;
+}
+
+#heading{
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+}
+
+/*skills cards css*/
+.box{
+    height: 320px;
+    width: 390px;
+    border:5px solid rgb(26, 22, 22);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 36px;
+    gap: 25px;
+
+}
+.box-pic{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.box-body{
+    color: bisque;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.423);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin-left:90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+
+.box-title{
+    color:bisque;
+    padding:15px;
+
+    
+}
+.box-content{
+    margin: -3px;
+    padding:15px;
+    font-style: italic;
+    font-size: 20px;
+    line-height:33px;
+
+}
+.box:hover .box-body{
+    right: 0;
+}
+
+
+/*achievements css*/
+
+.ach-desc{
+    width: 400px;
+    align-items: center;
+    border-radius: 10px;
+    border:  3px solid #fdaa036a ;
+    color: white;
+    padding:10px;
+    margin: 30px auto;
+    -webkit-box-shadow: inset 10px 10px 84px -35px rgba(166,118,23,1);
+    -moz-box-shadow: inset 10px 10px 84px -35px rgba(166,118,23,1);
+    box-shadow: inset 10px 10px 84px -35px rgba(166,118,23,1);
+    
+
+} 
+.car-title{
+    font-family: 'EB Garamond', serif;
+    color: #fdaa03;
+    text-shadow: 2px 2px 5px goldenrod;
+
+}

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(0,4,54);
+background: radial-gradient(circle, rgba(0,4,54,1) 0%, rgba(0,0,0,1) 83%);
+}
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.top-section{
+    width: 500px;
+    border: 3px solid gold;
+    border-radius: 15px;
+    padding: 7px;    
+    color: aliceblue;
+    margin: 30px auto;
+    -webkit-box-shadow: inset 10px 10px 84px -35px rgba(166,118,23,1);
+    -moz-box-shadow: inset 10px 10px 84px -35px rgba(166,118,23,1);
+    box-shadow: inset 10px 10px 84px -35px rgba(166,118,23,1);
+}
+.section{
+    width: 50%;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 13px;
+    -webkit-box-shadow:0px 0px 14px 0px rgba(247,247,247,1);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(247,247,247,1);
+    box-shadow: 0px 0px 14px 0px rgba(247,247,247,1);
+    position: relative;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.section:nth-last-child(1){
+    animation-delay: 4s;
+}
+.section:nth-last-child(2){
+    animation-delay: 3s;
+}
+.section:nth-last-child(3){
+    animation-delay: 2s;
+}
+.section:nth-last-child(4){
+    animation-delay: 1s;
+}
+.section:nth-last-child(5){
+    animation-delay: 0s;
+}
+
+.content{
+    color: white ;
+    padding: 3px;
+    position: relative;
+
+}
+.left-section{
+    left: -1%;
+}
+.right-section{
+    left: 51%;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: aliceblue;
+    top: 0;
+    left: 50%;
+    margin-left:-3px;
+    z-index: -1;   
+    animation: moveline 6s linear forwards;     
+}
+@keyframes moveline{
+     0%{
+        height: 0;
+     }
+     100%{
+        height: 100%;
+     }
+}
+
+.bx {
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    right: -20px;
+    top: 32px;
+    color: black;
+    background-color:white;
+    align-items: center;
+    padding: 8px;
+}
+.right-section .bx{
+    left: -27px;
+}
+.left-section .bx{
+    right: -27px;
+}
+.content small{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* BOTTOM BUTTONS STYLING*/
+.btn{
+    height: 40px;
+    width: 120px;
+    border: 2px solid whitesmoke;
+    background: rgb(0,4,54);
+    position: absolute;
+    right: 0;
+    margin:auto;
+    color: aliceblue;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+}
